@@ -1,0 +1,18 @@
+name: "data_quality_lab"
+version: "1.0.0"
+config-version: 2
+
+profile: "data_quality_lab"
+
+model-paths: ["models"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  data_quality_lab:
+    staging:
+      +materialized: view
+    mart:
+      +materialized: table

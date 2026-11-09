@@ -1,0 +1,9 @@
+data_quality_lab:
+  target: dev
+
+  outputs:
+    dev:
+      type: duckdb
+      path: "warehouse/lab.duckdb"
+      schema: main
+      threads: 4

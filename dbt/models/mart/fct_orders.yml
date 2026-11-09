@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Validated orders dataset used for the data quality lab."
+
+    columns:
+      - name: order_id
+        description: "Unique business identifier for each order."
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Customer associated with the order."
+        tests:
+          - not_null
+
+      - name: order_status
+        description: "Current business state of the order."
+        tests:
+          - accepted_values:
+              arguments:
+                values:
+                  - pending
+                  - paid
+                  - cancelled

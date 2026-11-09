@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+warehouse/*.duckdb
+outputs/*
+!outputs/.gitkeep
+.streamlit/
+.pytest_cache/
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
