@@ -313,7 +313,7 @@ Paid LLM APIs
 ## 1. Clone the repository
 
 ```powershell
-git clone <REPOSITORY_URL>
+git clone https://github.com/alfonsocerezop/local-ai-data-quality-copilot.git
 cd local-ai-data-quality-copilot
 ```
 
