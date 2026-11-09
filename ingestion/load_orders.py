@@ -20,6 +20,7 @@ project_root = Path(__file__).resolve().parent.parent
 
 csv_path = project_root / "data" / args.dataset / "orders.csv"
 db_path = project_root / "warehouse" / "lab.duckdb"
+db_path.parent.mkdir(parents=True, exist_ok=True)
 
 if not csv_path.exists():
     raise FileNotFoundError(f"Dataset not found: {csv_path}")
